@@ -1,0 +1,15 @@
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\bin\Debug\Newtonsoft.Json.dll
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\bin\Debug\Newtonsoft.Json.xml
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\DesktopApp1.Form1.resources
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\DesktopApp1.Form2.resources
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\DesktopApp1.Form3.resources
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.csproj.GenerateResource.cache
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.csproj.CoreCompileInputs.cache
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.csproj.CopyComplete
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\bin\Debug\TAP_DEMO.exe.config
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\bin\Debug\TAP_DEMO.exe
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\bin\Debug\TAP_DEMO.pdb
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.csprojAssemblyReference.cache
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Properties.Resources.resources
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.exe
+H:\ZZZ_C++\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.pdb
