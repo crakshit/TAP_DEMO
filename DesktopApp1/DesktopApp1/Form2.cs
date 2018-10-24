@@ -44,11 +44,10 @@ namespace DesktopApp1
             public string Salary { get; set; }
             public byte[] IrisId { get; set; }
         }
-        public static Employee emp = new Employee();
 
+        public static Employee emp = new Employee();
         public static string myJson;
         //public static string Firstname, Middlename, Lastname, Address, State, Phone, Email, DOB, Linkedin, Blood, Aadhar, Experience, Employeetype, Employeepost, Shiftname, Salary, Pincode, Department;
-
 
         private void Submit_Click(object sender, EventArgs e)
         {

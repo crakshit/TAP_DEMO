@@ -31,12 +31,15 @@ namespace DesktopApp1
             this.head_label = new System.Windows.Forms.Label();
             this.add = new System.Windows.Forms.Button();
             this.viewall = new System.Windows.Forms.Button();
+            this.addShift = new System.Windows.Forms.Button();
+            this.viewshift = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // head_label
             // 
             this.head_label.AutoEllipsis = true;
             this.head_label.AutoSize = true;
+            this.head_label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.head_label.Font = new System.Drawing.Font("Lucida Fax", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.head_label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.head_label.Location = new System.Drawing.Point(256, 24);
@@ -67,11 +70,33 @@ namespace DesktopApp1
             this.viewall.UseVisualStyleBackColor = true;
             this.viewall.Click += new System.EventHandler(this.viewall_Click);
             // 
+            // addShift
+            // 
+            this.addShift.Location = new System.Drawing.Point(77, 243);
+            this.addShift.Name = "addShift";
+            this.addShift.Size = new System.Drawing.Size(206, 105);
+            this.addShift.TabIndex = 3;
+            this.addShift.Text = "Add new shift";
+            this.addShift.UseVisualStyleBackColor = true;
+            this.addShift.Click += new System.EventHandler(this.addShift_Click);
+            // 
+            // viewshift
+            // 
+            this.viewshift.Location = new System.Drawing.Point(400, 243);
+            this.viewshift.Name = "viewshift";
+            this.viewshift.Size = new System.Drawing.Size(206, 105);
+            this.viewshift.TabIndex = 4;
+            this.viewshift.Text = "View all shift";
+            this.viewshift.UseVisualStyleBackColor = true;
+            this.viewshift.Click += new System.EventHandler(this.viewshift_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 443);
+            this.Controls.Add(this.viewshift);
+            this.Controls.Add(this.addShift);
             this.Controls.Add(this.viewall);
             this.Controls.Add(this.add);
             this.Controls.Add(this.head_label);
@@ -88,6 +113,8 @@ namespace DesktopApp1
         private System.Windows.Forms.Label head_label;
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button viewall;
+        private System.Windows.Forms.Button addShift;
+        private System.Windows.Forms.Button viewshift;
     }
 }
 

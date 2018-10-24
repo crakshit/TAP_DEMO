@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using TAP_DEMO;
+
 // This is the code for your desktop app.
 // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
 
@@ -19,6 +21,8 @@ namespace DesktopApp1
         {
             InitializeComponent();
         }
+
+        
 
         private void head_label_Click(object sender, EventArgs e)
         {
@@ -39,6 +43,22 @@ namespace DesktopApp1
         {
             Form3 Form3 = new Form3();
             Form3.Show();
+        }
+
+        private void addShift_Click(object sender, EventArgs e)
+        {
+            Form4 Form4 = new Form4();
+            Form4.Show();
+        }
+
+       
+
+        
+
+        private void viewshift_Click_1(object sender, EventArgs e)
+        {
+            Form5 Form5 = new Form5();
+            Form5.Show();
         }
     }
 }
