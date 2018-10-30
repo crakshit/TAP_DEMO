@@ -30,3 +30,4 @@ H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\DesktopApp1.csproj.CopyComplete
 H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.exe
 H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.pdb
 H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form5.resources
+H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form6.resources

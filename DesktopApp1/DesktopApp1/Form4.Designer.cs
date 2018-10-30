@@ -76,6 +76,7 @@
             this.starttime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.starttime.Location = new System.Drawing.Point(165, 81);
             this.starttime.Name = "starttime";
+            this.starttime.ShowUpDown = true;
             this.starttime.Size = new System.Drawing.Size(91, 20);
             this.starttime.TabIndex = 4;
             // 
@@ -84,6 +85,7 @@
             this.endtime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.endtime.Location = new System.Drawing.Point(165, 113);
             this.endtime.Name = "endtime";
+            this.endtime.ShowUpDown = true;
             this.endtime.Size = new System.Drawing.Size(91, 20);
             this.endtime.TabIndex = 5;
             // 

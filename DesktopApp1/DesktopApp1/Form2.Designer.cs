@@ -78,6 +78,7 @@
             this.label21.Size = new System.Drawing.Size(41, 13);
             this.label21.TabIndex = 82;
             this.label21.Text = "label21";
+            this.label21.UseWaitCursor = true;
             // 
             // submit
             // 
@@ -87,6 +88,7 @@
             this.submit.TabIndex = 81;
             this.submit.Text = "Submit";
             this.submit.UseVisualStyleBackColor = true;
+            this.submit.UseWaitCursor = true;
             this.submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // label20
@@ -97,6 +99,7 @@
             this.label20.Size = new System.Drawing.Size(49, 13);
             this.label20.TabIndex = 80;
             this.label20.Text = "Iris Data:";
+            this.label20.UseWaitCursor = true;
             // 
             // department
             // 
@@ -110,6 +113,7 @@
             this.department.Name = "department";
             this.department.Size = new System.Drawing.Size(100, 21);
             this.department.TabIndex = 79;
+            this.department.UseWaitCursor = true;
             // 
             // label19
             // 
@@ -119,6 +123,7 @@
             this.label19.Size = new System.Drawing.Size(65, 13);
             this.label19.TabIndex = 78;
             this.label19.Text = "Department:";
+            this.label19.UseWaitCursor = true;
             // 
             // pincode
             // 
@@ -126,6 +131,7 @@
             this.pincode.Name = "pincode";
             this.pincode.Size = new System.Drawing.Size(100, 20);
             this.pincode.TabIndex = 77;
+            this.pincode.UseWaitCursor = true;
             // 
             // label18
             // 
@@ -135,6 +141,7 @@
             this.label18.Size = new System.Drawing.Size(49, 13);
             this.label18.TabIndex = 76;
             this.label18.Text = "Pincode:";
+            this.label18.UseWaitCursor = true;
             // 
             // salary
             // 
@@ -142,6 +149,7 @@
             this.salary.Name = "salary";
             this.salary.Size = new System.Drawing.Size(100, 20);
             this.salary.TabIndex = 75;
+            this.salary.UseWaitCursor = true;
             // 
             // label17
             // 
@@ -151,6 +159,7 @@
             this.label17.Size = new System.Drawing.Size(39, 13);
             this.label17.TabIndex = 74;
             this.label17.Text = "Salary:";
+            this.label17.UseWaitCursor = true;
             // 
             // shiftname
             // 
@@ -163,6 +172,7 @@
             this.shiftname.Name = "shiftname";
             this.shiftname.Size = new System.Drawing.Size(100, 21);
             this.shiftname.TabIndex = 73;
+            this.shiftname.UseWaitCursor = true;
             // 
             // label16
             // 
@@ -172,6 +182,7 @@
             this.label16.Size = new System.Drawing.Size(62, 13);
             this.label16.TabIndex = 72;
             this.label16.Text = "Shift Name:";
+            this.label16.UseWaitCursor = true;
             // 
             // employeepost
             // 
@@ -184,6 +195,7 @@
             this.employeepost.Name = "employeepost";
             this.employeepost.Size = new System.Drawing.Size(100, 21);
             this.employeepost.TabIndex = 71;
+            this.employeepost.UseWaitCursor = true;
             // 
             // label15
             // 
@@ -193,6 +205,7 @@
             this.label15.Size = new System.Drawing.Size(80, 13);
             this.label15.TabIndex = 70;
             this.label15.Text = "Employee Post:";
+            this.label15.UseWaitCursor = true;
             // 
             // employeetype
             // 
@@ -205,6 +218,7 @@
             this.employeetype.Name = "employeetype";
             this.employeetype.Size = new System.Drawing.Size(100, 21);
             this.employeetype.TabIndex = 69;
+            this.employeetype.UseWaitCursor = true;
             // 
             // label14
             // 
@@ -214,6 +228,7 @@
             this.label14.Size = new System.Drawing.Size(83, 13);
             this.label14.TabIndex = 68;
             this.label14.Text = "Employee Type:";
+            this.label14.UseWaitCursor = true;
             // 
             // experienceyears
             // 
@@ -221,6 +236,7 @@
             this.experienceyears.Name = "experienceyears";
             this.experienceyears.Size = new System.Drawing.Size(100, 20);
             this.experienceyears.TabIndex = 67;
+            this.experienceyears.UseWaitCursor = true;
             // 
             // label13
             // 
@@ -230,6 +246,7 @@
             this.label13.Size = new System.Drawing.Size(93, 13);
             this.label13.TabIndex = 66;
             this.label13.Text = "Experience Years:";
+            this.label13.UseWaitCursor = true;
             // 
             // aadharnumber
             // 
@@ -237,6 +254,7 @@
             this.aadharnumber.Name = "aadharnumber";
             this.aadharnumber.Size = new System.Drawing.Size(100, 20);
             this.aadharnumber.TabIndex = 65;
+            this.aadharnumber.UseWaitCursor = true;
             // 
             // label12
             // 
@@ -246,6 +264,7 @@
             this.label12.Size = new System.Drawing.Size(84, 13);
             this.label12.TabIndex = 64;
             this.label12.Text = "Aadhar Number:";
+            this.label12.UseWaitCursor = true;
             // 
             // bloodgroup
             // 
@@ -253,6 +272,7 @@
             this.bloodgroup.Name = "bloodgroup";
             this.bloodgroup.Size = new System.Drawing.Size(100, 20);
             this.bloodgroup.TabIndex = 63;
+            this.bloodgroup.UseWaitCursor = true;
             // 
             // linkedinid
             // 
@@ -260,6 +280,7 @@
             this.linkedinid.Name = "linkedinid";
             this.linkedinid.Size = new System.Drawing.Size(100, 20);
             this.linkedinid.TabIndex = 62;
+            this.linkedinid.UseWaitCursor = true;
             // 
             // dateofbirth
             // 
@@ -268,6 +289,7 @@
             this.dateofbirth.Name = "dateofbirth";
             this.dateofbirth.Size = new System.Drawing.Size(100, 20);
             this.dateofbirth.TabIndex = 61;
+            this.dateofbirth.UseWaitCursor = true;
             this.dateofbirth.Value = new System.DateTime(2018, 10, 20, 14, 4, 34, 0);
             // 
             // label11
@@ -278,6 +300,7 @@
             this.label11.Size = new System.Drawing.Size(69, 13);
             this.label11.TabIndex = 60;
             this.label11.Text = "Blood Group:";
+            this.label11.UseWaitCursor = true;
             // 
             // label10
             // 
@@ -287,6 +310,7 @@
             this.label10.Size = new System.Drawing.Size(62, 13);
             this.label10.TabIndex = 59;
             this.label10.Text = "Linkedin Id:";
+            this.label10.UseWaitCursor = true;
             // 
             // label9
             // 
@@ -296,6 +320,7 @@
             this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 58;
             this.label9.Text = "Date of Birth:";
+            this.label9.UseWaitCursor = true;
             // 
             // email
             // 
@@ -303,6 +328,7 @@
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(100, 20);
             this.email.TabIndex = 57;
+            this.email.UseWaitCursor = true;
             // 
             // label8
             // 
@@ -312,6 +338,7 @@
             this.label8.Size = new System.Drawing.Size(35, 13);
             this.label8.TabIndex = 56;
             this.label8.Text = "Email:";
+            this.label8.UseWaitCursor = true;
             // 
             // phone
             // 
@@ -319,6 +346,7 @@
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(100, 20);
             this.phone.TabIndex = 55;
+            this.phone.UseWaitCursor = true;
             // 
             // label7
             // 
@@ -328,6 +356,7 @@
             this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 54;
             this.label7.Text = "Phone:";
+            this.label7.UseWaitCursor = true;
             // 
             // state
             // 
@@ -335,6 +364,7 @@
             this.state.Name = "state";
             this.state.Size = new System.Drawing.Size(100, 20);
             this.state.TabIndex = 53;
+            this.state.UseWaitCursor = true;
             // 
             // label6
             // 
@@ -344,6 +374,7 @@
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 52;
             this.label6.Text = "State:";
+            this.label6.UseWaitCursor = true;
             // 
             // address
             // 
@@ -351,6 +382,7 @@
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(100, 20);
             this.address.TabIndex = 51;
+            this.address.UseWaitCursor = true;
             // 
             // label5
             // 
@@ -360,6 +392,7 @@
             this.label5.Size = new System.Drawing.Size(48, 13);
             this.label5.TabIndex = 50;
             this.label5.Text = "Address:";
+            this.label5.UseWaitCursor = true;
             // 
             // lastname
             // 
@@ -367,6 +400,7 @@
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(100, 20);
             this.lastname.TabIndex = 49;
+            this.lastname.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -376,6 +410,7 @@
             this.label4.Size = new System.Drawing.Size(61, 13);
             this.label4.TabIndex = 48;
             this.label4.Text = "Last Name:";
+            this.label4.UseWaitCursor = true;
             // 
             // middlename
             // 
@@ -383,6 +418,7 @@
             this.middlename.Name = "middlename";
             this.middlename.Size = new System.Drawing.Size(100, 20);
             this.middlename.TabIndex = 47;
+            this.middlename.UseWaitCursor = true;
             // 
             // label3
             // 
@@ -392,6 +428,7 @@
             this.label3.Size = new System.Drawing.Size(72, 13);
             this.label3.TabIndex = 46;
             this.label3.Text = "Middle Name:";
+            this.label3.UseWaitCursor = true;
             // 
             // firstname
             // 
@@ -399,6 +436,7 @@
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(100, 20);
             this.firstname.TabIndex = 45;
+            this.firstname.UseWaitCursor = true;
             // 
             // label2
             // 
@@ -408,6 +446,7 @@
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 44;
             this.label2.Text = "First Name:";
+            this.label2.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -418,6 +457,7 @@
             this.label1.Size = new System.Drawing.Size(131, 16);
             this.label1.TabIndex = 43;
             this.label1.Text = "Employee Details";
+            this.label1.UseWaitCursor = true;
             // 
             // Form2
             // 
@@ -466,6 +506,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.UseWaitCursor = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
