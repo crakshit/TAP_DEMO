@@ -55,5 +55,22 @@ namespace TAP_DEMO
             
             dataGridView1.DataSource = shift;
         }
+
+        
+        private void update_Click(object sender, EventArgs e)
+        {
+            Form7 Form7 = new Form7();
+            Form7.Show();
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            string delURL = "http://localhost:8080/shift/" + (dataGridView1.CurrentCell.RowIndex + 1).ToString();
+
+            WebRequest request = WebRequest.Create(delURL);
+            request.Method = "DELETE";
+
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+        }
     }
 }

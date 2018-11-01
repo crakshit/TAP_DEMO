@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,21 +7,27 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json;
-using TAP_DEMO;
 
-namespace DesktopApp1
+namespace TAP_DEMO
 {
-    public partial class Form3 : Form
+    public partial class Form11 : Form
     {
-        public Form3()
+        public Form11()
         {
             InitializeComponent();
+
+            allEmp = Gett("http://localhost:8080/employee");
+            List<Employee> emp = JsonConvert.DeserializeObject<List<Employee>>(allEmp);
+
+            empId.DataSource = emp;
+            empId.DisplayMember = "id";
         }
+        public static string allEmp;
+
+
         public class Employee
         {
             public int id { get; set; }
@@ -44,12 +51,8 @@ namespace DesktopApp1
             public string EmployeePost { get; set; }
             public string ShiftName { get; set; }
             public string Salary { get; set; }
-            //public byte[] IrisId { get; set; }
+            public string IrisId { get; set; }
         }
-        public static string fname;
-        public static string myJson;
-        public static int id;
-        private static readonly HttpClient client = new HttpClient();
 
         public string Gett(string uri)
         {
@@ -64,39 +67,30 @@ namespace DesktopApp1
             }
         }
 
-
-
-
-        private void submit_Click(object sender, EventArgs e)
+        private void attendance_Click(object sender, EventArgs e)
         {
-            myJson = Gett("http://localhost:8080/employee");
+            var i = empId.SelectedIndex + 1;
+            var Emp = Gett("http://localhost:8080/employee/" + i.ToString());
+
+            Employee empl = JsonConvert.DeserializeObject<Employee>(Emp);
+            var json = empl.IrisId;
+
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:8080/attendance");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+
+                streamWriter.Write("raj raj raj raj raj raj raj ");
+            }
             
-
-            List<Employee> emp = JsonConvert.DeserializeObject<List<Employee>>(myJson);
-            
-            dataGridView1.DataSource = emp;
-        }
-
-        //Form6 Form6 = new Form6();
-        private void update_Click(object sender, EventArgs e)
-        {
-            //this.Hide();
-            Form6 Form6 = new Form6((dataGridView1.CurrentCell.RowIndex +1).ToString());
-            Form6.Closed += (s, args) => this.Close();
-            Form6.Show();
-         
-
-
-        }
-
-        private void delete_Click(object sender, EventArgs e)
-        {
-            string delURL = "http://localhost:8080/employee/" + (dataGridView1.CurrentCell.RowIndex + 1).ToString();
-
-            WebRequest request = WebRequest.Create(delURL);
-            request.Method = "DELETE";
-
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+            }
+            label2.Text = empl.IrisId.ToString();
         }
     }
 }

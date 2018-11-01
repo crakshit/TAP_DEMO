@@ -68,6 +68,7 @@
             this.firstname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.iris = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label21
@@ -459,11 +460,19 @@
             this.label1.Text = "Employee Details";
             this.label1.UseWaitCursor = true;
             // 
+            // iris
+            // 
+            this.iris.Location = new System.Drawing.Point(671, 419);
+            this.iris.Name = "iris";
+            this.iris.Size = new System.Drawing.Size(100, 20);
+            this.iris.TabIndex = 83;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(949, 526);
+            this.Controls.Add(this.iris);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.label20);
@@ -504,6 +513,7 @@
             this.Controls.Add(this.firstname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Name = "Form2";
             this.Text = "Form2";
             this.UseWaitCursor = true;
@@ -554,5 +564,6 @@
         private System.Windows.Forms.TextBox firstname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox iris;
     }
 }

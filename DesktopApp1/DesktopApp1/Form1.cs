@@ -31,12 +31,12 @@ namespace DesktopApp1
             System.Diagnostics.Process.Start("http://www.biomatiques.com");
 
         }
-        Form2 Form2 = new Form2();
+        //Form2 Form2 = new Form2();
 
         private void add_Click(object sender, EventArgs e)
         {
             
-                //Form2 Form2 = new Form2();
+                Form2 Form2 = new Form2();
                 Form2.Show();
             //Form2 Form2 = new Form2();
             //if(Form2.)
@@ -58,11 +58,35 @@ namespace DesktopApp1
             Form4.Show();
         }
 
-        Form5 Form5 = new Form5();
+        
         private void viewshift_Click_1(object sender, EventArgs e)
         {
-            //Form5 Form5 = new Form5();
+            Form5 Form5 = new Form5();
             Form5.Show();
+        }
+
+        private void addShiftPattern_Click(object sender, EventArgs e)
+        {
+            Form8 Form8 = new Form8();
+            Form8.Show();
+        }
+
+        private void viewshiftpattern_Click(object sender, EventArgs e)
+        {
+            Form9 Form9 = new Form9();
+            Form9.Show();
+        }
+
+        private void viewAttendance_Click(object sender, EventArgs e)
+        {
+            Form10 Form10 = new Form10();
+            Form10.Show();
+        }
+
+        private void attendance_Click(object sender, EventArgs e)
+        {
+            Form11 Form11 = new Form11();
+            Form11.Show();
         }
     }
 }

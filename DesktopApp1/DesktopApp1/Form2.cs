@@ -70,16 +70,14 @@ namespace DesktopApp1
             emp.Salary = salary.Text;
             emp.Pincode = pincode.Text;
             emp.Department = department.Text;
-            emp.IrisId = System.Text.Encoding.ASCII.GetBytes("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+            emp.IrisId = System.Text.Encoding.ASCII.GetBytes(iris.Text);
 
 
 
             label21.Text = emp.DateOfBirth;
             myJson = JsonConvert.SerializeObject(emp);
 
-            //var request = (HttpWebRequest)WebRequest.Create("http://localhost:8080/employee");
-            //request.ContentType = "application/json";
-            //request.Method = "POST";
+
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:8080/employee");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
