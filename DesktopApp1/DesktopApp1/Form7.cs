@@ -79,7 +79,8 @@ namespace TAP_DEMO
                 var result = streamReader.ReadToEnd();
             }
 
-            //this.Hide();
+            MessageBox.Show("Shift: " +newshift.id +" updated.");
+            this.Hide();
         }
 
         public static int id;

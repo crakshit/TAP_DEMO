@@ -19,14 +19,14 @@ namespace TAP_DEMO
         {
             InitializeComponent();
 
-            allEmp = Gett("http://localhost:8080/employee");
+         /*   allEmp = Gett("http://localhost:8080/employee");
             List<Employee> emp = JsonConvert.DeserializeObject<List<Employee>>(allEmp);
 
             empId.DataSource = emp;
             empId.DisplayMember = "id";
+            */
         }
-        public static string allEmp;
-
+        
 
         public class Employee
         {
@@ -53,7 +53,7 @@ namespace TAP_DEMO
             public string Salary { get; set; }
             public string IrisId { get; set; }
         }
-
+        /*
         public string Gett(string uri)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
@@ -66,31 +66,47 @@ namespace TAP_DEMO
                 return reader.ReadToEnd();
             }
         }
-
+        */
         private void attendance_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var xx = false;
+                /*
             var i = empId.SelectedIndex + 1;
             var Emp = Gett("http://localhost:8080/employee/" + i.ToString());
 
             Employee empl = JsonConvert.DeserializeObject<Employee>(Emp);
             var json = empl.IrisId;
+            */
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:8080/attendance");
+                httpWebRequest.ContentType = "application/json";
+                httpWebRequest.Method = "POST";
 
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://localhost:8080/attendance");
-            httpWebRequest.ContentType = "application/json";
-            httpWebRequest.Method = "POST";
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                {
 
-            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                    streamWriter.Write(iris.Text);
+                }
+
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    var result = streamReader.ReadToEnd();
+                    xx = true;
+                }
+                if (xx == true)
+                {
+                    MessageBox.Show("Attendance added");
+                    this.Hide();
+                }
+                
+            }
+            catch(Exception ex)
             {
-
-                streamWriter.Write("raj raj raj raj raj raj raj ");
+                MessageBox.Show("Attendance not allowed");
+            }
             }
             
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-            {
-                var result = streamReader.ReadToEnd();
-            }
-            label2.Text = empl.IrisId.ToString();
-        }
     }
 }

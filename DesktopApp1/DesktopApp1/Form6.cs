@@ -141,6 +141,7 @@ namespace TAP_DEMO
                 var result = streamReader.ReadToEnd();
             }
 
+            MessageBox.Show("Employee: "+firstname.Text + " added.");
             this.Hide();
             
 

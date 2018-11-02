@@ -80,11 +80,18 @@ namespace DesktopApp1
         //Form6 Form6 = new Form6();
         private void update_Click(object sender, EventArgs e)
         {
+            try { 
             //this.Hide();
             Form6 Form6 = new Form6((dataGridView1.CurrentCell.RowIndex +1).ToString());
             Form6.Closed += (s, args) => this.Close();
             Form6.Show();
-         
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("No employee selected.");
+            }
+
+
 
 
         }
@@ -97,6 +104,8 @@ namespace DesktopApp1
             request.Method = "DELETE";
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+            MessageBox.Show("Employee: "+ (dataGridView1.CurrentCell.RowIndex + 1).ToString() +"deleted.");
         }
     }
 }

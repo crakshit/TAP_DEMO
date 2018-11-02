@@ -15,6 +15,7 @@ using TAP_DEMO;
 
 namespace DesktopApp1
 {
+    
     public partial class Form1 : Form
     {
         public Form1()
@@ -44,17 +45,17 @@ namespace DesktopApp1
             
         }
 
-        Form3 Form3 = new Form3();
+       // Form3 Form3 = new Form3();
         private void viewall_Click(object sender, EventArgs e)
         {
-            //Form3 Form3 = new Form3();
+            Form3 Form3 = new Form3();
             Form3.Show();
         }
 
-        Form4 Form4 = new Form4();
+        
         private void addShift_Click(object sender, EventArgs e)
         {
-            //Form4 Form4 = new Form4();
+            Form4 Form4 = new Form4();
             Form4.Show();
         }
 

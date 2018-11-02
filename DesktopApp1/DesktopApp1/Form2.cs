@@ -93,6 +93,8 @@ namespace DesktopApp1
             {
                 var result = streamReader.ReadToEnd();
             }
+            MessageBox.Show("Employee: "+emp.FirstName +" added.");
+            this.Hide();
         }
     }
 }
