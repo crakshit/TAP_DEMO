@@ -36,3 +36,4 @@ H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form8.resources
 H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form9.resources
 H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form10.resources
 H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form11.resources
+H:\TAP_DEMO\DesktopApp1\DesktopApp1\obj\Debug\TAP_DEMO.Form12.resources
